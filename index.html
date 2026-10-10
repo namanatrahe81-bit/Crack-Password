@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrackPass | Password Security Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo"><span>CRACK</span>PASS</div>
+    <div class="status">● SECURITY LAB</div>
+</nav>
+
+<main>
+
+    <section class="hero">
+        <div class="badge">CYBERSECURITY SIMULATOR</div>
+
+        <h1>Password<br><span>Security Lab</span></h1>
+
+        <p>
+            Test password strength and watch a simulated local
+            dictionary attack in a safe environment.
+        </p>
+    </section>
+
+    <section class="panel">
+
+        <div class="panel-title">
+            <span>01</span>
+            PASSWORD INPUT
+        </div>
+
+        <div class="input-box">
+            <input
+                type="text"
+                id="password"
+                placeholder="Enter a test password..."
+                autocomplete="off"
+            >
+            <button id="toggle">SHOW</button>
+        </div>
+
+        <div class="strength">
+            <div class="strength-top">
+                <span>STRENGTH</span>
+                <strong id="strengthText">—</strong>
+            </div>
+
+            <div class="meter">
+                <div id="meterBar"></div>
+            </div>
+        </div>
+
+        <div class="checks">
+            <div id="length">○ 8+ characters</div>
+            <div id="upper">○ Uppercase letter</div>
+            <div id="lower">○ Lowercase letter</div>
+            <div id="number">○ Number</div>
+            <div id="special">○ Special character</div>
+        </div>
+
+    </section>
+
+
+    <section class="panel">
+
+        <div class="panel-title">
+            <span>02</span>
+            SIMULATED ATTACK
+        </div>
+
+        <p class="warning">
+            ⚠ This is a local educational simulation.
+            No external systems, accounts, or password hashes are attacked.
+        </p>
+
+        <button class="attack-btn" id="start">
+            ▶ START SIMULATION
+        </button>
+
+        <div class="terminal">
+
+            <div class="terminal-head">
+                <span>LOCAL TERMINAL</span>
+                <span id="terminalStatus">READY</span>
+            </div>
+
+            <div id="terminalOutput">
+                <p>> System ready...</p>
+                <p>> Waiting for simulation...</p>
+            </div>
+
+        </div>
+
+        <div class="result" id="result">
+            <div>
+                <small>RESULT</small>
+                <h2 id="resultTitle">---</h2>
+            </div>
+
+            <div class="attempts">
+                <small>ATTEMPTS</small>
+                <strong id="attemptCount">0</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <div>
+            <span>01</span>
+            <h3>Local Only</h3>
+            <p>No network requests or external targets.</p>
+        </div>
+
+        <div>
+            <span>02</span>
+            <h3>Educational</h3>
+            <p>Understand how weak passwords can be guessed.</p>
+        </div>
+
+        <div>
+            <span>03</span>
+            <h3>Defensive</h3>
+            <p>Learn how to create stronger passwords.</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    CRACKPASS © 2026 — CYBERSECURITY EDUCATION LAB
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
